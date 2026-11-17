@@ -21,6 +21,67 @@
         }
         h1 { color: #00d5ff; }
         p { color: #b3b3b3; max-width: 600px; margin: 10px auto; line-height: 1.6; }
+        /* Play Store Button Container & Styling */
+        .store-badge-container {
+            background: linear-gradient(135deg, #1e1e1e 0%, #121212 100%);
+            border: 1px solid #333;
+            border-radius: 12px;
+            padding: 30px;
+            text-align: center;
+            margin: 40px auto;
+            max-width: 500px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.6);
+        }
+        .store-badge-content h3 {
+            color: #00e5ff;
+            margin-top: 0;
+            margin-bottom: 10px;
+            font-size: 1.5rem;
+        }
+        .store-badge-content p {
+            color: #b0b0b0;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        .play-store-btn {
+            display: inline-flex;
+            align-items: center;
+            background-color: #000000;
+            border: 1.5px solid #444;
+            color: #ffffff;
+            padding: 10px 22px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        }
+        .play-store-btn:hover {
+            background-color: #1a1a1a;
+            border-color: #00e5ff;
+            transform: translateY(-2px);
+            box-shadow: 0 6px 16px rgba(0, 229, 255, 0.2);
+        }
+        .play-icon {
+            margin-right: 12px;
+            flex-shrink: 0;
+        }
+        .btn-text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+            line-height: 1.2;
+        }
+        .small-text {
+            font-size: 0.65rem;
+            letter-spacing: 0.5px;
+            color: #aaa;
+        }
+        .large-text {
+            font-size: 1.15rem;
+            font-weight: bold;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            color: #fff;
+        }
     </style>
 </head>
 <body>
@@ -30,7 +91,24 @@
 
     <h1>Chronicle Play</h1>
     <p>Independent mobile game development studio focused on crafting compelling, atmospheric, and highly engaging offline experiences for Android devices.</p>
-    
+<!-- Google Play Developer Page Download Widget -->
+    <div class="store-badge-container">
+        <div class="store-badge-content">
+            <h3>Explore Our Games</h3>
+            <p>Browse our complete catalog of offline arcade and narrative titles on the Google Play Store.</p>
+            <!-- Replace the href below with your actual Google Play Developer/Publisher URL -->
+            <a href="https://play.google.com/store/apps/dev?id=8547963000075493981" target="_blank" class="play-store-btn" aria-label="Explore games on Google Play">
+                <!-- Official Google Play Vector SVG Icon -->
+                <svg class="play-icon" viewBox="0 0 512 512" width="24" height="24">
+                    <path fill="#fff" d="M325.3 234.3L104.2 113.8c-4.4-2.5-9.6-1.9-13.4 1.5-3.8 3.4-5.3 8.7-3.8 13.5l45.4 144.3-45.4 144.3c-1.5 4.8 0 10.1 3.8 13.5 3.8 3.4 9 4 13.4 1.5l221.1-120.5c5-2.7 8.2-8 8.2-13.8s-3.2-11.1-8.2-13.8zm-229.7 127l37.8-120.3-37.8-120.3v240.6zm54.3-120.3l154.2 84-154.2 84v-168z"/>
+                </svg>
+                <div class="btn-text">
+                    <span class="small-text">EXPLORE ON</span>
+                    <span class="large-text">Google Play</span>
+                </div>
+            </a>
+        </div>
+    </div>
     <hr style="border: 1px solid #222; margin: 40px auto; max-width: 600px;">
     
     <h2>Our Projects</h2>
